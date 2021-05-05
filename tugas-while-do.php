@@ -11,12 +11,11 @@
 	while($a >= 80) {
 			
 		if ($a % 2 == 0 ) {
-			echo " ini bilangan Genap = ";
+			echo $a .  " adalah bilangan Genap ";
 		}else{
-			echo " ini bilangan Ganjil = ";
+			echo $a . " adalah bilangan Ganjil ";
 		  }
 
-		echo $a;
 		echo "<br>";
 		$a--;
 	}
@@ -30,13 +29,13 @@
 	$b = 200;
 
 	do{
-		if($a &2 ==0){
-			echo "ini bilangan Genap = ";
+		if($b % 2 == 0){
+			echo $b . " adalah bilangan Genap";
 		}else{
-			echo "ini bilangan Ganjil = ";
+			echo $b . " adalah bilangan Ganjil ";
 		}
 
-   		echo $b . "<br>";
+   		echo "<br>";
    		$b--;
 
 	}while ($b >= 80)
