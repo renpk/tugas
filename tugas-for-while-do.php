@@ -7,35 +7,40 @@
 	for($m = 13; $m >= $h; $m--)
 		{
 			if( ($m - $h == 5) ){
-				echo "  Hasilnya Benar" . "<br>" . "<br>";
+				echo 13 - 8 . "<br>" . "<br>";
+				break;
 			}else{
-				echo " Hasilnya Tidak Sesuai" . "<br>";
+				echo 0 . "<br>";
+			  }
 		}
-	}
 
-	// $m = 13;
-	// $i = 9;
 
-	// while ($m >= $i) 
-	// {
-	// 	if ( ($m - $i == 4) ) {
-	// 		echo "Hasilnya sangat Benar". "<br>" . "<br>";
-	// 	}else{
-	// 		echo "Hasilnya Salah" . "<br>";
-	// 	  }
-	// 	$m--;
-	// }
+	$m = 13;
+	$i = 9;
+
+		while ($m >= $i) 
+		{
+				if ( ($m - $i == 4) ) {
+					echo 13 - 9 . "<br>" . "<br>";
+					break;
+				}else{
+					echo 0 . "<br>";
+		  	  	  }
+				$m--;
+		}
+
 		
-		// $r = 18;
-		// $h = 8;
+	$r = 18;
+	$h = 8;
 
-		// do {
-		// 		if ( ($r - $h == 10) ) {
-		// 			echo "Hasil ya Benar". "<br>". "<br>" ;
-		// 		}else{
-		// 			echo "Hasilnya kurang tepat". "<br>" ;
-		// 		  }
-		// 		$r--;
-		// }while ($r >= $h);
+		do {
+				if ( ($r - $h == 10) ) {
+					echo 18 - 8 . "<br>". "<br>" ;
+					break;
+				}else{
+					echo 0 . "<br>" ;
+				  }
+				$r--;
+		}while ($r >= $h);
 
  ?>
