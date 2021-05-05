@@ -11,7 +11,6 @@
 			}else{
 				echo " Hasilnya Tidak Sesuai" . "<br>";
 		}
-		
 	}
 
 	// $m = 13;
@@ -31,13 +30,12 @@
 		// $h = 8;
 
 		// do {
-		// 	if ( ($r - $h == 10) ) {
-		// 		echo "Hasil ya Benar". "<br>". "<br>" ;
-		// 	}else{
-		// 		echo "Hasilnya kurang tepat". "<br>" ;
-		// 	}
-
-		// 	$r--;
+		// 		if ( ($r - $h == 10) ) {
+		// 			echo "Hasil ya Benar". "<br>". "<br>" ;
+		// 		}else{
+		// 			echo "Hasilnya kurang tepat". "<br>" ;
+		// 		  }
+		// 		$r--;
 		// }while ($r >= $h);
 
  ?>
