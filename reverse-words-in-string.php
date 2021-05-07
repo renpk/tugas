@@ -67,7 +67,7 @@ echo "<br>";
 
 			// break untuk menghentikan looping
 			break;		
-			$index++;
+			$o++;
 
 		} while ( $index <= count($coba));
 
