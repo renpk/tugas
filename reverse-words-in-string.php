@@ -15,10 +15,14 @@
 	$coba = explode(' ' , $str);
 	// var_dump untuk mengecek yang di explode sudah menjadi array
 	var_dump($coba);
+
 		for($i = count($coba)-1; $i >= 0; $i--)
 		{
 				echo $coba[$i] . " ";
 		}
+
+		// output = dimana berada saya
+
 
 echo "<br>";
 
@@ -27,38 +31,47 @@ echo "<br>";
 			echo $key . " ";
 		}
 
+		// output = dimana berada saya
+
 echo "<br>";
-		
-	//$index variabel yg saya buat untuk menyimpan nilai 0 
-	$index = 0;
 
-		while($index <= count($coba)) 
-		{	
-			if ($index <= count($coba) ) 
-			{
-				echo "dimana berada saya" . "<br> ";
-				// break untuk menghentikan looping
-				break;
+	$nama = 'saya berada dimana';
+	$coba = explode(' ', $nama);
+	var_dump($coba);
+	$o = 0;
+
+	while($o <= 2 ){
+		if ($o = 2) {
+			echo $coba[2] . " " . $coba[1]. " " . $coba[0];
 		}else{
-				echo "saya berada dimana";
-		}
+			echo "salah";
+		   	}
+		
+		break;
+		$o++;
+	}
 
-  			$index++;
-		}
+		// output = dimana berada saya
+	echo "<br>";
+
 
 		do {
-			if($index <= count($coba))
+			if($o <= count($coba))
 			{
-				echo "dimana berada saya";
+					echo $coba[2] . " " ;
+					echo $coba[1] . " " ;
+					echo $coba[0]. " " ;
 			}else{
-				echo "saya berada dimana";
-			}
+					echo "saya berada dimana";
+				}
+
+			// break untuk menghentikan looping
 			break;		
 			$index++;
 
 		} while ( $index <= count($coba));
 
 
-		// Output : dimana berada saya
+		// output : dimana berada saya
 
  ?>
