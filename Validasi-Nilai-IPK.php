@@ -25,23 +25,23 @@
 
 echo "<br>";
 
-	if ($IPK >= 2) {
+	if ($IPK >= 2 && $IPK < 2.5) {
 		echo "SKS yang bisa di ambil hanya 18 SKS";
-	}else if($IPK < 2.5){
-		echo "SKS yang bisa di ambil hanya 18 SKS";
+	}else{
+		echo "SKS tidak bisa diambil";
 	}
 
 echo "<br>";	
 
-	if ($IPK >= 1.5) {
+	if ($IPK >= 1.5 && $IPK < 2) {
 		echo "SKS yang bisa di ambil hanya 15 SKS";
-	}else if($IPK < 2){
-		echo "SKS yang bisa di ambil hanya 15 SKS";
+	}else{
+		echo "SKS tidak bisa diambil";
 	}
 
 echo "<br>";	
 
-	if ($IPK > 1.5) {
+	if ($IPK < 1.5 ) {
 		echo "SKS yang bisa di ambil hanya 12 SKS";
 	}else{
 		echo "SKS tidak bisa diambil";
