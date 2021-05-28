@@ -10,15 +10,18 @@
 */ 
 
 
-	$str = "saya berada dimana";
+	$str = "saya-berada-dimana";
 	// explode untuk mengubah string menjadi array
-	$coba = explode(' ' , $str);
+	$coba = explode('-' , $str);
 	// var_dump untuk mengecek yang di explode sudah menjadi array
 	var_dump($coba);
 
 		for($i = count($coba)-1; $i >= 0; $i--)
 		{
-				echo $coba[$i] . " ";
+				echo $coba[$i];
+			if($i > 0) {
+				echo " ";
+			}
 		}
 
 		// output = dimana berada saya
@@ -38,40 +41,43 @@ echo "<br>";
 	$nama = 'saya berada dimana';
 	$coba = explode(' ', $nama);
 	var_dump($coba);
-	$o = 0;
+	$o = count($coba)-1;
 
-	while($o <= 2 ){
-		if ($o = 2) {
-			echo $coba[2] . " " . $coba[1]. " " . $coba[0];
-		}else{
-			echo "salah";
-		   	}
+
+	while($o >= 0 ) {
+		echo $coba[$o];
 		
-		break;
-		$o++;
+		if($o > 0){
+			echo " ";
+		}		
+		// break;
+		$o--;
 	}
 
 		// output = dimana berada saya
 	echo "<br>";
 
+	$o = count($coba)-1;
 
 		do {
-			if($o <= count($coba))
-			{
-					echo $coba[2] . " " ;
-					echo $coba[1] . " " ;
-					echo $coba[0]. " " ;
-			}else{
-					echo "saya berada dimana";
-				}
+
+			echo $coba[$o];
+
+			if($o > 0)
+			{				
+				echo " ";
+			}
 
 			// break untuk menghentikan looping
-			break;		
-			$o++;
+			// break;		
+			$o--;
 
-		} while ( $index <= count($coba));
+		} while ( $o >= 0);
 
 
 		// output : dimana berada saya
+
+
+		
 
  ?>
