@@ -48,7 +48,7 @@ function data (
 	echo "Berlaku Hingga : " . $Berlaku ; 
 }
 	
-	if ( $umur = persyaratan (2020, 2003) >= 17 ){
+	if ( $umur = persyaratan (2020 , 2003) >= 17 ){
 		echo data
 		  	(
 			  'Moch Ilham Rendiansyah ', 
@@ -65,7 +65,7 @@ function data (
 			  'SEUMUR HIDUP' 
 		  	);
   } else{
-	   echo "Anda Belum cukup umur";
+	   echo "Anda Belum Cukup Umur !";
 	}
 		
 
